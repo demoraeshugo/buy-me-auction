@@ -1,0 +1,257 @@
+html {
+	/* background-image: linear-gradient(#262626, #d9d9d9); */
+	background-color: white;
+	background-attachment: fixed;
+	font-family: 'Fredoka One', cursive;
+	/* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.loginHeader {
+	/* font-family: 'Fredoka One', cursive; */
+	display: block;
+	font-size: 75px;
+	/* text-shadow: 5px 5px black; */
+	text-align: center;
+	color: white;
+	margin: auto;
+	margin-top: 10%;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.loginPortal {
+  	border: 2px solid black;
+  	border-radius: 7px;
+  	width: 50%;
+  	height: 50%;
+  	margin: auto;
+  	margin-top: 0.5%;
+  	padding: 40px;
+  	box-shadow: 4px 4px 20px #bfbfbf;
+}
+
+.usernameTextLogin {
+	display: block;
+	font-size: 25px;
+	color: white;
+	/* text-shadow: 3px 3px #000000; */
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	text-align: center;
+	
+}
+
+.loginUsername {
+	display: block;
+	font-size: 20px;
+	width: 50%;
+	border-radius: 6px;
+	padding:5px;
+	border: 2px solid black;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 30px;
+	
+}
+
+.passwordTextLogin {
+	display: block;
+	font-size: 25px;
+	color: white;
+	/* text-shadow: 3px 3px #000000; */
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	text-align: center;
+}
+
+.loginPassword {
+	display: block;
+	font-size: 20px;
+	width: 50%;
+	border-radius: 6px;
+	padding:5px;
+	border: 2px solid black;
+	margin: auto;
+	text-align: center;
+}
+
+.loginButton {
+	display: block;
+	color: black;
+	background-color: white;
+	border-radius: 7px;
+	border: 2px solid black;
+	font-size: 20px;
+	font-weight: bold;
+	width: 150px;
+	height: 35px;
+	margin: auto;
+	margin-top: 45px;
+}
+
+.loginButton:hover {
+	box-shadow: 2px 2px #000000;
+	cursor: pointer;
+}
+
+.createAcc {
+	display: block;
+	width: 190px;
+	text-align: center;
+	text-decoration: none;
+	margin: auto;
+	margin-top: 0.5%;
+	font-size: 25px;
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* ############################ VALIDATING INFO PAGE ############################### */
+
+.errMsgLogin {
+	display: block;
+	color: red;
+	margin: auto;
+	text-align: center;
+	margin-top: 25%;
+} 
+
+/* ############################ CREATING ACCOUNT PAGE ############################### */
+
+.createAccHeader {
+	display: block;
+	font-size: 75px;
+	text-align: center;
+	color: white;
+	margin: auto;
+	margin-top: 1px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.nameTable, .userInfoTable, .addressTable, .passwordTable {
+	width: 100%;
+	border-spacing: 20px;
+	margin: auto;
+}
+
+.addressTable2 {
+	width: 100%;
+	border-spacing: 20px;
+	margin: auto;
+}
+
+
+.firstNameTextCreateAcc, .lastNameTextCreateAcc,.dobTextCreateAcc, .streetAddressTextCreateAcc, .cityAddressTextCreateAcc, .zipCodeAddressTextCreateAcc, .countryAddressTextCreateAcc, .usernameTextCreateAcc, .emailCreateAcc {
+	display: block;
+	font-size: 25px;
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	
+}
+
+.passwordTextCreateAcc {
+	display: block;
+	font-size: 25px;
+	text-align: center;
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	
+}
+
+.stateAddressTextCreateAcc {
+	display: block;
+	font-size: 25px;
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	margin-top: 1px;
+}
+
+.emailTextCreateAcc {
+	display: block;
+	font-size: 25px;
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	margin-top: 17px;
+}
+
+.firstNameFieldCreateAcc, .lastNameFieldCreateAcc, .dobFieldCreateAccount, .streetAddressFieldCreateAccount, .cityAddressFieldCreateAccount, .zipCodeAddressFieldCreateAccount, .countryAddressFieldCreateAccount, .stateAddressFieldCreateAccount, .usernameFieldCreateAccount, .emailFieldCreateAcc {
+	display: block;
+	font-size: 20px;
+	width: 100%;
+	border-radius: 6px;
+	padding:5px;
+	border: 2px solid black;
+	margin: auto;
+}
+
+.passwordFieldCreateAcc {
+	display: block;
+	font-size: 20px;
+	width: 100%;
+	border-radius: 6px;
+	padding:5px;
+	border: 2px solid black;
+	margin: auto;
+	text-align:center;
+}
+
+.usernameDESC {
+	display: block;
+	font-size: 14px;
+	color: black;
+}
+
+.passwordDESC {
+	display: block;
+	font-size: 14px;
+	color: black;
+	text-align: center;
+}
+
+.createAccButton {
+	display: block;
+	color: black;
+	background-color: white;
+	border-radius: 7px;
+	border: 2px solid black;
+	font-size: 20px;
+	font-weight: bold;
+	width: 200px;
+	height: 35px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.createAccButton:hover {
+	box-shadow: 2px 2px #000000;
+	cursor: pointer;
+}
+
+/* ############################ HOME PAGE ############################### */
+
+.homepageHeader {
+	display: block;
+	font-size: 75px;
+	text-align: center;
+	color: white;
+	margin: auto;
+	margin-top: 20%;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.logoutButton {
+	display: block;
+	color: black;
+	background-color: white;
+	border-radius: 7px;
+	border: 2px solid black;
+	font-size: 20px;
+	font-weight: bold;
+	width: 200px;
+	height: 35px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.logoutButton:hover {
+	box-shadow: 2px 2px #000000;
+	cursor: pointer;
+}
+
