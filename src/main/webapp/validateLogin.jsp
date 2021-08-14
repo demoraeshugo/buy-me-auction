@@ -33,8 +33,8 @@
 		String u,p;
 		int flag = 0;
 		while (result.next()) {
-			u = result.getString(9);
-			p = result.getString(11);
+			u = result.getString(3);
+			p = result.getString(4);
 			
 			if(u.equals(username) && p.equals(password)){
 				response.sendRedirect("HomePage.jsp");
@@ -44,6 +44,8 @@
 			
 		}
 		if(flag == 0) {
+			out.println(result.getString(3));
+			out.println(result.getString(4));
 			out.println("<div class = 'errMsgLogin'> The username or password entered is incorrect, " + "<a href='LoginPortal.jsp'> please try again</a> </div>"  );
 		}
 	%>

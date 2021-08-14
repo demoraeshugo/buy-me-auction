@@ -13,7 +13,7 @@ public class ApplicationDB {
 	public Connection getConnection(){
 		
 		//Create a connection string
-		String connectionUrl = "jdbc:mysql://localhost:3306/BuyMe";
+		String connectionUrl = "jdbc:mysql://localhost:3306/buy-me-auction";
 		Connection connection = null;
 		
 		try {
@@ -31,7 +31,7 @@ public class ApplicationDB {
 		}
 		try {
 			//Create a connection to your DB
-			connection = DriverManager.getConnection(connectionUrl,"root", "root");
+			connection = DriverManager.getConnection(connectionUrl, "root", "root");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -49,9 +49,6 @@ public class ApplicationDB {
 			e.printStackTrace();
 		}
 	}
-	
-	
-	
 	
 	
 	public static void main(String[] args) {

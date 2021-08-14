@@ -31,5 +31,23 @@ CREATE TABLE `Accounts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
+
+DROP TABLE IF EXISTS `Auctions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `Auctions` (
+    `auction_id` int DEFAULT NULL DEFAULT 0,
+	`init_price` int DEFAULT NULL,
+	`min_price` int DEFAULT NULL,
+	`long_description` varchar(300) DEFAULT NULL,
+	`short_description` varchar(50) DEFAULT NULL,
+	`bid_increment` int DEFAULT NULL,
+	`start_datetime` datetime DEFAULT NULL,
+	`end_datetime` datetime DEFAULT NULL,
+	`curr_bid` int DEFAULT NULL,
+	PRIMARY KEY (`auction_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
 insert into Accounts values ("Admin", "Staff", "1999-07-19", "123 Way Ave", "New Brunswick", "08854", "USA", "NJ", "adminUser", "init_num@scarletmail.rutgers.edu", "passwordAdmin");
 
