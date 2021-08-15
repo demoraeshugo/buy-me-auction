@@ -58,7 +58,7 @@
 		prepStmt.setString(3, auctionItemName);
 		
 		prepStmt.executeUpdate();
-		prepStmt.close();
+		// prepStmt.close();
 		
 		// CREATE IN AUCTION TABLE
 		
@@ -81,7 +81,7 @@
 		prepStmt.setTimestamp(8, timestamp);
 		
 		prepStmt.executeUpdate();
-		prepStmt.close();
+		// prepStmt.close();
 		
 		// LINK AUCTION AND ITEM
 		String createAucItemLink = "INSERT INTO Items_In_Auctions (ref_auction_id, ref_item_in_auction_id)"
@@ -93,7 +93,7 @@
 		prepStmt.setString(2, item_id);
 		
 		prepStmt.executeUpdate();
-		prepStmt.close();
+		// prepStmt.close();
 		
 		// LINK AUCTION AND SELLER
 		
@@ -102,7 +102,7 @@
 		String createAucSellerLink = "INSERT INTO Lists_Auction (listed_auction_username, listed_auction_auction_id)"
 		+ " VALUES(?, ?)";
 		
-		prepStmt = con.prepareStatement(createAucItemLink);
+		prepStmt = con.prepareStatement(createAucSellerLink);
 		
 		prepStmt.setString(1, username);
 		prepStmt.setString(2, auction_id);

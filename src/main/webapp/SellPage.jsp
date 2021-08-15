@@ -17,7 +17,6 @@
 				<script>
 				function change(obj) {
 
-
 				    var selectBox = obj;
 				    var selected = selectBox.options[selectBox.selectedIndex].value;
 				    var itemSubCat = document.getElementById("itemSubCat");
@@ -50,6 +49,7 @@
         String strQuery = "SELECT * FROM auctions a" 
         		+ " JOIN lists_auction l ON a.auction_id = l.listed_auction_auction_id"
         		+ " JOIN items_in_auctions ia ON ia.ref_auction_id = a.auction_id"
+        		+ " JOIN items i ON i.item_id = ia.ref_item_in_auction_id"
         		+ " WHERE l.listed_auction_username= ?";
         preparedStatement = con.prepareStatement(strQuery);
         preparedStatement.setString(1,username);
@@ -75,6 +75,7 @@
                 <td><%=rs.getString("item_desc") %></td>
                 <td><%=rs.getDate("end_datetime") %></td>
                 <td><%=rs.getTime("end_datetime") %></td>
+                <td><%=rs.getInt("min_price") %></td>
                 <td><%=rs.getInt("curr_bid") %></td>
             </tr>
             <%}%>
