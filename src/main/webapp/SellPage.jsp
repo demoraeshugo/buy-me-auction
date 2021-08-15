@@ -20,19 +20,16 @@
 
 				    var selectBox = obj;
 				    var selected = selectBox.options[selectBox.selectedIndex].value;
-				    var subCat1 = document.getElementById("subCat1");
-				    var subCat2 = document.getElementById("subCat2");
+				    var itemSubCat = document.getElementById("itemSubCat");
 				    var subCatLabel = document.getElementById("subCatLabel");
 				    
 				    subCatLabel.style.display = 'block'
 
 				    if(selected === 'Computers'){
-				    	subCat1.style.display = "block";
-				    	subCat2.style.display = "none";
+				    	itemSubCat.style.display = "block";
 				    }
 				    else{
-				    	subCat2.style.display = "block";
-				    	subCat1.style.display = "none";
+				    	itemSubCat.style.display = "none";
 				    }
 				}
 				</script>
@@ -99,22 +96,15 @@
 				<select class="countryAddressFieldCreateAccount" name="itemCategory" required onchange="change(this)">
 						<option disabled selected value> -- select an option -- </option>
 						<option value="Computers">Computers</option>
-						<option value="Cars">Cars</option>
 				</select>
 				</td>
 				<td>
 				<label class="firstNameTextCreateAcc" id='subCatLabel' style='display: none'>Item Sub Category</label>
-				<select class="countryAddressFieldCreateAccount" id='subCat1' name="computerSubCategories" style='display: none' required>
+				<select class="countryAddressFieldCreateAccount" id='itemSubCat' name="computerSubCategories" style='display: none' required>
 						<option disabled selected value> -- select an option -- </option>
 						<option value="Laptops">Laptops</option>
 						<option value="Desktops">Desktops</option>
 						<option value="Performance">Performance</option>
-				</select>
-				<select class="countryAddressFieldCreateAccount" id='subCat2' name="carSubCategories" style='display: none' required>
-						<option disabled selected value> -- select an option -- </option>
-						<option value="Computers">Sedans</option>
-						<option value="Cars">SUVs</option>
-						<option value="Bikes">Sport</option>
 				</select>
 				</td>
 			</tr>
@@ -164,6 +154,7 @@
 			</tr>
 		</table>
 		
+		<input type="submit" value="List Item" class="createAccButton"> 
 		</form>
 </body>
 </html>
