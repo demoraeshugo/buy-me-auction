@@ -72,7 +72,7 @@ html {
 	text-align: center;
 }
 
-.loginButton {
+.button {
 	display: block;
 	color: black;
 	background-color: white;
@@ -86,7 +86,7 @@ html {
 	margin-top: 45px;
 }
 
-.loginButton:hover {
+.button:hover {
 	box-shadow: 2px 2px #000000;
 	cursor: pointer;
 }
@@ -116,6 +116,16 @@ html {
 /* ############################ CREATING ACCOUNT PAGE ############################### */
 
 .createAccHeader {
+	display: block;
+	font-size: 75px;
+	text-align: center;
+	color: white;
+	margin: auto;
+	margin-top: 1px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.newAuctionHeader {
 	display: block;
 	font-size: 75px;
 	text-align: center;

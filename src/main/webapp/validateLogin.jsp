@@ -37,6 +37,7 @@
 			p = result.getString(4);
 			
 			if(u.equals(username) && p.equals(password)){
+				request.getSession().setAttribute("USERNAME", username);
 				response.sendRedirect("HomePage.jsp");
 				flag = 1;
 				break;
@@ -44,8 +45,6 @@
 			
 		}
 		if(flag == 0) {
-			out.println(result.getString(3));
-			out.println(result.getString(4));
 			out.println("<div class = 'errMsgLogin'> The username or password entered is incorrect, " + "<a href='LoginPortal.jsp'> please try again</a> </div>"  );
 		}
 	%>

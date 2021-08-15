@@ -18,8 +18,16 @@
 	<body>
 			<h2 class="homepageHeader">Welcome to BuyMe!</h2>
 			
+			<form method="post" action="BuyPage.jsp">
+			<input type="submit" value="Buy" class="loginButton">
+			</form>
+			
+			<form method="post" action="SellPage.jsp">
+			<input type="submit" value="Sell" class="loginButton">
+			</form>
+			
 			<form method="post" action="LoginPortal.jsp">
-			<input type="submit" value="Logout" class="logoutButton">
+			<input type="submit" value="Logout" class="loginButton">
 			</form>
 </body>
 </html>
